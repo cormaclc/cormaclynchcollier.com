@@ -1,6 +1,6 @@
 {
-  "name": "@cormaclc/react-starter",
-  "version": "0.0.3",
+  "name": "cormaclynchcollier.com",
+  "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -13,14 +13,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cormaclc/react-starter.git"
+    "url": "git+https://github.com/cormaclc/cormaclynchcollier.com.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/cormaclc/react-starter/issues"
+    "url": "https://github.com/cormaclc/cormaclynchcollier.com/issues"
   },
-  "homepage": "https://github.com/cormaclc/react-starter#readme",
+  "homepage": "https://github.com/cormaclc/cormaclynchcollier.com#readme",
   "dependencies": {
     "next": "^15.3.3",
     "react": "^18.3.1",

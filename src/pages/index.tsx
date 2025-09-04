@@ -1,9 +1,13 @@
 import React from 'react';
+import { Bookends } from '../components/Bookends';
+
+// styles
 import './index.scss';
-import { Header } from '../components/header/Header';
 
 export default function Page() {
   return <div>
-    <Header />
+    <Bookends>
+        Page content gooes here
+    </Bookends>
   </div>;
 }

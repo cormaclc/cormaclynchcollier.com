@@ -1,9 +1,10 @@
 import React from 'react';
-import { Header } from '../components/header/Header';
+import { Bookends } from '../components/Bookends';
 
 export default function About() {
   return <div>
-    <Header />
-    <h1>About page!</h1>
+    <Bookends>
+      <h1>About page!</h1>
+    </Bookends>
   </div>;
 }

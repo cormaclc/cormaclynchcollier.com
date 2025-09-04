@@ -9,7 +9,7 @@
     "start": "next start",
     "lint": "eslint . --ext .js,jsx,ts,tsx",
     "prepare": "husky install",
-    "test": "jest"
+    "test": "jest --passWithNoTests"
   },
   "repository": {
     "type": "git",

@@ -1,9 +1,9 @@
 import React from 'react';
-import { Navigation } from '../components/Navigation';
+import { Header } from '../components/header/Header';
 
 export default function About() {
   return <div>
+    <Header />
     <h1>About page!</h1>
-    <Navigation path="/" label="Home" />
   </div>;
 }

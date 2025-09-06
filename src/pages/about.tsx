@@ -3,12 +3,11 @@ import { Bookends } from '../components/Bookends';
 
 // styles
 import '../styles/base.scss';
-import './about.scss';
 
 export default function About() {
   return <div>
     <Bookends>
-      <div className='section'>
+      <div className='section-spacing'>
         <h3>Who am I?</h3>
         <p style={{ marginBottom: '0.5em' }}>
         I graduated from WPI in December, 2019, where I studied Computer Science. I enjoy many aspects of the field, 
@@ -21,7 +20,7 @@ export default function About() {
         <a href="documents/LynchCollierResume.pdf" target="_blank">Click for my resume.</a>
       </div>
 
-      <div className='section'>
+      <div className='section-spacing'>
         <h3>What do I study?</h3>
         <p>
           <span>WPI:</span> Class of 2020 
@@ -34,7 +33,7 @@ export default function About() {
         </p>
       </div>
 
-      <div className='section'>
+      <div className='section-spacing'>
         <h3>What do I know?</h3>
         <p>
         Java, C, C++, C# Python, HTML, CSS, JavaScript <br/>
@@ -42,7 +41,7 @@ export default function About() {
         </p>
       </div>
 
-      <div className='section'>
+      <div className='section-spacing'>
         <h3>Can you contact me?</h3>
         <p>
           <span>Email:</span> cormac.collier_at_gmail.com <br/>

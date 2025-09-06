@@ -2,12 +2,12 @@ import React from 'react';
 import { Bookends } from '../components/Bookends';
 
 // styles
-import './index.scss';
+import '../styles/base.scss';
 
 export default function Page() {
-  return <div>
+  return (
     <Bookends>
-        Page content gooes here
+      Page content goes here
     </Bookends>
-  </div>;
+  );
 }

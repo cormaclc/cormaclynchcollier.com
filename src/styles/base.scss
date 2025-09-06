@@ -1,3 +1,21 @@
 $color-main: #538C74;
 $color-secondary: #afcbbf;
 $color-text: white;
+
+$margin-top: 1.5rem;
+$margin-bottom: 0rem;
+
+body {
+    background-color: $color-main;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 16px;
+    // use 15% margins on sides for larger screens
+    margin: $margin-top 15% $margin-bottom;
+}
+
+@media (max-width: 460px) {
+    body {
+        // use 3% margins on sides for smaller screens
+        margin: $margin-top 3% $margin-bottom;
+    }
+}

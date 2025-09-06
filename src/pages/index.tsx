@@ -19,8 +19,8 @@ export default function Page() {
         ))}
       </div>
       <p className='description'>
-            I am a full-stack developer<br />
-            with experience in <Typewriter text={SKILLS} customClassName='typewriter' />
+          I am a full-stack developer<br />
+          with experience in <Typewriter text={SKILLS} customClassName='typewriter' />
       </p>
     </Bookends>
   );

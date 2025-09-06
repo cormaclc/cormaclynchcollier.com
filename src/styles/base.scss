@@ -9,6 +9,7 @@ body {
     font-size: 16px;
     // use 15% margins on sides for larger screens
     margin: $margin-top 15% $margin-bottom;
+    color: shared.$color-text;
 }
 
 @media (max-width: 460px) {

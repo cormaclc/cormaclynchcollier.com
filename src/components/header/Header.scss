@@ -1,4 +1,4 @@
-@use '../../styles/base';
+@use '../../styles/shared';
 
 .header {
     display: flex;
@@ -9,18 +9,18 @@
 
 .name {
     border: white solid thick;
-    font-weight: bold;
-    color: base.$color-text;
+    font-weight: 600;
+    color: shared.$color-text;
     padding: .5rem;
 }
 
 .header-link:hover {
-    color: base.$color-text;
+    color: shared.$color-text;
     text-decoration: none;
 }
 
 .header-link {
-    color: base.$color-secondary;
+    color: shared.$color-secondary;
     cursor: pointer;
     margin-bottom: 1rem;
     text-decoration: none;

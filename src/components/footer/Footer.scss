@@ -1,4 +1,4 @@
-@use '../../styles/base';
+@use '../../styles/shared';
 
 .footer {
     position: fixed;
@@ -6,6 +6,6 @@
     bottom: 0;
     width: 100%;
     text-align: center;
-    background-color: rgba(base.$color-main,0.7);
+    background-color: rgba(shared.$color-main,0.7);
     display: flex;
 }

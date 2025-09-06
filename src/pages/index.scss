@@ -1,0 +1,32 @@
+@use '../styles/shared';
+
+.home-wrapper {
+    margin-top: 25%;
+}
+
+.home-link:hover {
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.home-link {
+    color: shared.$color-text;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 1.25rem;
+}
+
+h1 {
+    margin: .75rem 0rem;
+    font-weight: shared.$lighter-bold;
+}
+
+.description {
+    color: shared.$color-text;
+}
+
+.typewriter {
+    font-weight: bold;
+    color: shared.$color-emphasis;
+}

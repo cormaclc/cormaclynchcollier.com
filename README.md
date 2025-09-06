@@ -4,8 +4,17 @@ IN PROGRESS.
 
 Plan is to replace https://github.com/cormaclc/personal-angular-site with a react site.
 
-### Scripts
+## Scripts
 
 * Run locally: `npm run dev`
 * Linting: `npm run lint`
 * Testing: `npm run test`
+
+## Folder Structure
+
+* `/src` contains all source code, assests, content, etc
+* `/src/pages` contains the page components
+* `/src/components/` contains additional components
+  * note: any components requiring their own `scss` should be given their own folder (i.e. `src/components/footer` contains the `Footer.tsx` and `Footer.scss` files)
+* `src/content` contains the raw content displayed on the site in the form of ts constaints
+  * note: not all content is maintained here, just content that may require frequent updates

@@ -1,12 +1,17 @@
 # cormaclynchcollier.com
 
-Source code for cormaclynchcollier.com
+Source code for cormaclynchcollier.com.
 
-## Scripts
+## Local Development
 
-* Run locally: `npm run dev`
-* Linting: `npm run lint`
-* Testing: `npm run test`
+* To run the app locally execute `npm run dev` in the console.
+* To run lint checks execute `npm run lint` in the console.
+* Test support is "configured" although none exist. To run the tests execute `npm run test` in the console.
+
+## Deploying Changes
+
+1. Build the application: `npm run build`. This will generate the built application under `dist/`.
+2. Upload the contents of `dist/` to the S3 bucket hosting the site.
 
 ## Folder Structure
 
@@ -20,5 +25,3 @@ Source code for cormaclynchcollier.com
 * `/public` contains all assets (pdf, images, etc)
   * `/public/images/` contains any images used on the site
   * `/public/documents/` contains any documents accessible via the site (e.g. resume)
-
-## Deploying updates to 

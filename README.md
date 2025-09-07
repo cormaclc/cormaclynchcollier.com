@@ -1,8 +1,6 @@
 # cormaclynchcollier.com
 
-IN PROGRESS.
-
-Plan is to replace https://github.com/cormaclc/personal-angular-site with a react site.
+Source code for cormaclynchcollier.com
 
 ## Scripts
 
@@ -22,3 +20,5 @@ Plan is to replace https://github.com/cormaclc/personal-angular-site with a reac
 * `/public` contains all assets (pdf, images, etc)
   * `/public/images/` contains any images used on the site
   * `/public/documents/` contains any documents accessible via the site (e.g. resume)
+
+## Deploying updates to 

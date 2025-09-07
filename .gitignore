@@ -6,3 +6,9 @@ node_modules/
 
 # nextjs
 .next/
+
+# build
+dist/
+
+# mac
+.DS_Store

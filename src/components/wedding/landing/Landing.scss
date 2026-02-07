@@ -18,4 +18,9 @@
   border: 0px;
   border-radius: 5px;
   font-size: 18px;
+
+  &:hover {
+    background-color: shared.$color-text;
+    color: shared.$color-main;
+  } 
 }

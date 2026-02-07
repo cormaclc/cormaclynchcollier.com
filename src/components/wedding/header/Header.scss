@@ -1,0 +1,17 @@
+@use '../../../styles/wedding/shared';
+
+.header {
+    align-items: center;
+    padding-top: 10px;
+}
+
+.header-link:hover {
+    color: shared.$color-text;
+    text-decoration: none;
+}
+
+.header-link {
+    color: shared.$color-secondary;
+    cursor: pointer;
+    text-decoration: none;
+}

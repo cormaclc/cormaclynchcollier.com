@@ -1,0 +1,9 @@
+.landing-paragraph {
+  margin-bottom: 1rem;
+  max-width: 50%;
+
+  // Mobile responsiveness
+  @media (max-width: 600px) {
+    max-width: 100%;
+  }
+}

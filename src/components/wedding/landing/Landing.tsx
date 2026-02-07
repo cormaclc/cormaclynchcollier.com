@@ -14,5 +14,6 @@ export const Landing = () => {
     {LANDING_PAGE_CONTENT.map((paragraph, index) => (
       <p className='landing-paragraph' key={index}>{paragraph}</p>
     ))}
+    <a className='rsvp-button' href="/and-natalie/rsvp">RSVP here</a>
   </div>;
 };

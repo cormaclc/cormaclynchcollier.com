@@ -1,3 +1,5 @@
+@use '../../../styles/wedding/shared.scss';
+
 .landing-paragraph {
   margin-bottom: 1rem;
   max-width: 50%;
@@ -6,4 +8,14 @@
   @media (max-width: 600px) {
     max-width: 100%;
   }
+}
+
+.rsvp-button {
+  background-color: shared.$color-secondary;
+  color: shared.$color-main;
+  cursor: pointer; 
+  padding: 0.5rem 1rem;
+  border: 0px;
+  border-radius: 5px;
+  font-size: 18px;
 }

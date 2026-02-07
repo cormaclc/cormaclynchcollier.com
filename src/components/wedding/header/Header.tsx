@@ -7,7 +7,8 @@ import './Header.scss';
 export const Header = () => {
   return (
     <div>
-      <Link className="header-link" style={{ marginRight: '1rem'}} href="/and-natalie">home</Link>
+      <Link className="header-link" href="/and-natalie">home</Link>
+      <Link className="header-link" href="/and-natalie/rsvp">RSVP</Link>
     </div>
   );
 };

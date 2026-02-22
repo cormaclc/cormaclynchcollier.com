@@ -1,0 +1,78 @@
+@use '../../../styles/wedding/shared.scss';
+
+.input-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  align-items: center;
+  width: 100%;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+label {
+  margin-bottom: 0.5rem;
+}
+
+input, textarea {
+  padding: 0.5rem;
+  border: 1px solid white;
+  border-radius: 4px;
+  width: 50%;
+
+  font-family: shared.$font-family;
+
+  // for mobile
+  @media (max-width: 600px) {
+    // make input fields nearly full width
+    width: 75%;
+  }
+}
+
+// specific styles for radio button
+input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #ccc;
+  border-radius: 3px;
+  background-color: white;
+  cursor: pointer;
+  position: relative;
+  margin-right: 0.5rem;
+
+  // checked state
+  &:checked {
+    background-color: shared.$color-secondary;
+    border-color: shared.$color-secondary;
+  }
+
+  // checkmark
+  &:checked::after {
+    content: '';
+    position: absolute;
+    left: 3px;
+    top: 0px;
+    width: 5px;
+    height: 9px;
+    border: 2px solid white;
+    border-top: none;
+    border-left: none;
+    transform: rotate(45deg);
+  }
+
+  // disabled state
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}
+
+textarea {
+  resize: none;
+}

@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
+import { InputField } from '../inputField/InputField';
 
 // styles
 import '../../../styles/wedding/base.scss';
+import './RsvpContent.scss';
 
 // 'https://docs.google.com/forms/d/e/YOUR_FORM_ID/formResponse'
 const GOOGLE_FORM_ACTION = 'https://docs.google.com/forms/d/1eTsvaopONAcF7cVMir96_gZi8WJu7ZqXOqiB0TcT1gM/formResponse';
@@ -43,17 +45,16 @@ export const RSVPContent = () => {
 
   return (
     <form onSubmit={handleSubmit} className="content-wrapper">
-      <div>
-        <label htmlFor="name">Your Name</label>
-        <input 
-          type="text" 
-          id="name"
-          name="entry.845038701"
-          required 
-          disabled={loading}
-        />
-      </div>
-      
+      <InputField loading={loading} id="name" />
+
+      <InputField loading={loading} id="welcomeParty" inputType='radio' />
+
+      <InputField loading={loading} id="rsvp" inputType='radio' />
+
+      <InputField loading={loading} id="dietaryRestrictions" inputType='textarea' />
+
+      <InputField loading={loading} id="otherComments" inputType='textarea' />
+
       <button type="submit" disabled={loading}>
         {loading ? 'Sending...' : 'Send RSVP'}
       </button>

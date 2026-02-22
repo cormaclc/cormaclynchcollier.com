@@ -1,0 +1,1 @@
+export type FormId = 'name' | 'welcomeParty' | 'rsvp' | 'dietaryRestrictions' | 'otherComments';

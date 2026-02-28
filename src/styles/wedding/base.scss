@@ -52,3 +52,17 @@ a:hover {
       margin-top: 15%;
     }
 }
+
+.custom-button {
+  background-color: shared.$color-contrast;
+  color: shared.$color-text;
+  cursor: pointer; 
+  padding: 0.5rem 1rem;
+  border: 0px;
+  border-radius: 5px;
+  font-size: 18px;
+
+  &:hover {
+    background-color: shared.$color-contrast-muted;
+  } 
+}

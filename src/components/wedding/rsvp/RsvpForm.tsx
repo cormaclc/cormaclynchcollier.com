@@ -7,7 +7,7 @@ import '../../../styles/wedding/base.scss';
 // 'https://docs.google.com/forms/d/e/YOUR_FORM_ID/formResponse'
 const GOOGLE_FORM_ACTION = 'https://docs.google.com/forms/d/1eTsvaopONAcF7cVMir96_gZi8WJu7ZqXOqiB0TcT1gM/formResponse';
 
-export const RSVPContent = () => {
+export const RSVPForm = () => {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
   
@@ -43,7 +43,7 @@ export const RSVPContent = () => {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="content-wrapper">
+    <form onSubmit={handleSubmit} >
       <InputField loading={loading} id="name" />
 
       <InputField loading={loading} id="welcomeParty" inputType='radio' />

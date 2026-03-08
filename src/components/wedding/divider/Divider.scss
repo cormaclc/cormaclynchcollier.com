@@ -1,0 +1,14 @@
+@use '../../../styles/wedding/shared.scss';
+
+.divider {
+  height: 1px;
+  width: 50%;
+  border-top: 1px solid shared.$color-secondary;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+
+  // for smaller screen sizes
+  @media (max-width: 600px) {
+    width: 100%;
+  }
+}

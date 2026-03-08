@@ -15,3 +15,6 @@ export const ID_TO_DATA: Record<FormId, { label: string, name: string }> = {
   dietaryRestrictions: { label: DIETARY_RESTRICTIONS_LABEL, name: 'entry.1658189941' },
   otherComments: { label: OTHER_COMMENTS_LABEL, name: 'entry.1596816796' },
 };
+
+export const TITLE = 'RSVP';
+export const SUBTITLE = 'Please fill out the form below to RSVP by June 1st. We can’t wait to celebrate with you!';

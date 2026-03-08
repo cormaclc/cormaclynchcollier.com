@@ -4,6 +4,7 @@ import { ACCOMMODATIONS } from '../../content/wedding/accommodation';
 
 // styles
 import '../../styles/wedding/base.scss';
+import { Divider } from '../../components/wedding/divider/Divider';
 
 const bottomMargins = { marginBottom: '1rem' };
 
@@ -12,8 +13,8 @@ const Accommodation = () => {
     <Header /> 
     <div className='content-wrapper'>
       {ACCOMMODATIONS.map(({ name, details, bookingLink, address, additionalDetails}, index) => (
-        <div key={`accommodation-${index}`} >
-          <h3 style={{...bottomMargins, marginTop: index === 0 ? '0px' : undefined}}>{name}</h3>
+        <div key={`accommodation-${index}`} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+          <h3 style={{...bottomMargins, marginTop: index !== 0 ? '0' : undefined}}>{name}</h3>
           <div style={bottomMargins}>
             {details.map((detail, detailIndex) => <p key={`accommodation-${index}-detail-${detailIndex}`}>{detail}</p>)}
           </div>
@@ -26,6 +27,7 @@ const Accommodation = () => {
           </div>
           {/* TODO: IMAGES */}
           <p>TODO: IMAGES</p>
+          {index !== ACCOMMODATIONS.length - 1 && <Divider />}
         </div>
       ))}
     </div>

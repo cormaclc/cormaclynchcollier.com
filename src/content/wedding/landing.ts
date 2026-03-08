@@ -1,5 +1,5 @@
 export const LANDING_PAGE_CONTENT: string[] = [
-  'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', 
-  'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 
-  'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+  'We can\'t wait to celebrate with you!'
 ];
+
+export const BOLDED_CONTENT: string[] = ['August 27-29, 2026', 'AWOL Hotel', 'Stowe, VT'];

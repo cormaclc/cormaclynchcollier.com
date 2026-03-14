@@ -1,0 +1,9 @@
+@use '../../../styles/wedding/shared.scss';
+
+.bold-text {
+  font-weight: shared.$lighter-bold;
+}
+
+.margin-bottom {
+  margin-bottom: .5rem;
+}

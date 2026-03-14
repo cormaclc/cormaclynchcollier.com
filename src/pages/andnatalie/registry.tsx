@@ -1,5 +1,6 @@
 import React from 'react';
 import { Header } from '../../components/wedding/header/Header';
+import { RegistryContent } from '../../components/wedding/registry/RegistryContent';
 
 // styles
 import '../../styles/wedding/base.scss';
@@ -9,8 +10,7 @@ export const Registry = () => {
     <Header />
     <div className='content-wrapper'>
       <h3>Registry</h3>
-      {/* TODO: INSERT REGISTRY */}
-      <p>TODO: insert registry information</p>
+      <RegistryContent />
     </div>
   </div>;
 };

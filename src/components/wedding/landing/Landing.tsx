@@ -19,6 +19,6 @@ export const Landing = () => {
     {BOLDED_CONTENT.map((item, index) => (
       <p className='landing-paragraph bolded-landing-paragraph' key={index}><strong>{item}</strong></p>
     ))}
-    <a className='custom-button rsvp-button' href="/and-natalie/rsvp">Click here to RSVP</a>
+    <a className='custom-button rsvp-button' href="/andnatalie/rsvp">Click here to RSVP</a>
   </div>;
 };

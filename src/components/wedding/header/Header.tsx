@@ -7,9 +7,9 @@ import './Header.scss';
 export const Header = () => {
   return (
     <div>
-      <Link className="header-link" href="/and-natalie">Home</Link>
-      <Link className="header-link" href="/and-natalie/rsvp">RSVP</Link>
-      <Link className="header-link" href="/and-natalie/accommodation">Accommodation</Link>
+      <Link className="header-link" href="/andnatalie">Home</Link>
+      <Link className="header-link" href="/andnatalie/rsvp">RSVP</Link>
+      <Link className="header-link" href="/andnatalie/accommodation">Accommodation</Link>
     </div>
   );
 };

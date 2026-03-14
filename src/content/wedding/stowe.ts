@@ -1,56 +1,48 @@
-
-
-const ON_THE_WAY_THERE_HEADER = 'On the way there...';
-const ON_THE_WAY_THERE: string[] = [
-  'Cold Hollow cider mill (12 minutes from AWOL Stowe)',
-  'Vermont Artisan Coffee & Tea (11 minutes from AWOL Stowe)',
-  'Ben and Jerry’s factory (16 minutes from AWOL Stowe)'
-];
-
-const THINGS_TO_DO_HEADER = 'Things to do...';
+const THINGS_TO_DO_HEADER = 'Our favorite things to do';
 const THINGS_TO_DO: string[] = [
-  'Stowe gondola',
-  'Visit von Trapp Family Lodge',
-  'Rent bikes to bike along the Stowe Recreation Path',
-  'Shopping around Stowe center'
+  'Get a cider donut from Cold Hollow Cider Mill',
+  'Ride the Stowe Gondola',
+  'Visit the von Trapp Family Lodge',
+  'Rent bikes to ride along the Stowe Recreation Path',
+  'Shop in Stowe center',
+  'Tour the Ben and Jerry’s factory'
 ];
 
-const FAVORITE_RESTAURANTS_HEADER = 'Our favorite restaurants...';
+const FAVORITE_RESTAURANTS_HEADER = 'Our favorite restaurants';
 const FAVORITE_RESTAURANTS: string[] = [
   'Doc Ponds',
   'Ideltyme',
   'Butler’s pantry',
+  'American Flatbread',
   'The Bench'
 ];
 
-const FAVORITE_DRINK_SPOTS_HEADER = 'Our favorite drink spots...';
+const FAVORITE_DRINK_SPOTS_HEADER = 'Our favorite drink spots';
 const FAVORITE_DRINK_SPOTS: string[] = [
-  'The Alchemist',
-  'Apres Only',
-  'Apres',
-  'Cork'
+  'Vermont Artisan Coffee & Tea',
+  'Black Cap Coffee & Bakery',
+  'The Alchemist Brewery',
+  'Apres Only Bar',
+  'Stowe Public House',
+  'Cork Wine Bar'
 ];
 
-const FAVORITE_WALKS_HEADER = 'Our favorite walks...';
+const FAVORITE_WALKS_HEADER = 'Our favorite walks';
 const FAVORITE_WALKS: string[] = [
-  'Stowe recreation path',
+  'Stowe Recreation Path',
   'Cady Hill Forest'
 ];
 
-const FAVORITE_HIKES_HEADER = 'Our favorite hikes...';
+const FAVORITE_HIKES_HEADER = 'Our favorite hikes';
 const FAVORITE_HIKES: string[] = [
   'Stowe Pinnacle',
+  'Mt. Mansfield',
   'Bingham Falls',
   'Moss Glen Falls',
-  'Smuggler’s Notch State Park',
-  'Sterling Falls'
+  'Sterling Falls',
 ];
 
 export const STOWE_CONTENT: { header: string; content: string[] }[] = [
-  {
-    header: ON_THE_WAY_THERE_HEADER,
-    content: ON_THE_WAY_THERE 
-  },
   {
     header: THINGS_TO_DO_HEADER,
     content: THINGS_TO_DO

@@ -3,7 +3,7 @@
 .header {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     padding-top: 10px;
     position: relative;
 }
@@ -17,7 +17,7 @@
     color: shared.$color-secondary;
     cursor: pointer;
     text-decoration: none;
-    margin-right: 1rem;
+    margin-right: 2rem;
 }
 
 .hamburger {

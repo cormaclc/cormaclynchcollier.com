@@ -13,7 +13,7 @@ interface InputFieldProps {
 }
 
 export const InputField = ({ loading, id , inputType = 'input'}: InputFieldProps) => {
-  const { label, name } = ID_TO_DATA[id];
+  const { label, name, required } = ID_TO_DATA[id];
 
   const [selectedOption, setSelectedOption] = React.useState('');
 
@@ -21,14 +21,14 @@ export const InputField = ({ loading, id , inputType = 'input'}: InputFieldProps
     type="text" 
     id={id}
     name={name}
-    required 
+    required={required}
     disabled={loading}
   />;
   if (inputType === 'textarea') {
     inputComponent = <textarea
       id={id}
       name={name}
-      required
+      required={required}
       disabled={loading}
     />;
   } else if (inputType === 'radio') {
@@ -39,7 +39,7 @@ export const InputField = ({ loading, id , inputType = 'input'}: InputFieldProps
             type="radio"
             name={name}
             value={option}
-            required
+            required={required}
             disabled={loading}
             id={`${id}-${index}`}
             checked={selectedOption === option}

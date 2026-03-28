@@ -1,6 +1,6 @@
 import React from 'react';
 import { DESCRIPTION } from '../../../content/wedding/registry';
-import { Divider } from '../divider/Divider';
+// import { Divider } from '../divider/Divider';
 
 // styles
 import '../../../styles/wedding/base.scss';
@@ -24,10 +24,9 @@ export const RegistryContent = () => {
         {paragraph.text}
       </p>
     )}
-    <Divider />
-    {/* TODO: REAL LINK */}
-    <a className='custom-button' href="https://www.crateandbarrel.com/" target="_blank" rel="noopener noreferrer">
+    {/* <Divider /> */}
+    {/* <a className='custom-button' href="https://www.crateandbarrel.com/" target="_blank" rel="noopener noreferrer">
       Gift Registry at Crate and Barrel
-    </a>
+    </a> */}
   </>;
 };

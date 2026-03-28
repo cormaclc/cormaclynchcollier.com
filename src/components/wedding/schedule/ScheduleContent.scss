@@ -1,0 +1,127 @@
+/* Timeline styles only - removed grouped headings */
+
+/* ensure shared colors available */
+@import '../../../styles/wedding/shared.scss';
+
+/* Timeline layout */
+.timeline {
+  position: relative;
+  padding: 2rem 0;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: rgba($color-contrast-muted, 0.12);
+  transform: translateX(-50%);
+}
+
+
+.timeline-item {
+  position: relative;
+  width: 50%;
+  padding: 1rem 2rem;
+  box-sizing: border-box;
+}
+
+.timeline-item.left {
+  left: 0;
+  text-align: right;
+}
+
+.timeline-item.right {
+  left: 50%;
+  text-align: left;
+}
+
+.timeline-item .timeline-content {
+  display: inline-block;
+  max-width: 380px;
+}
+
+.timeline-item::after {
+  content: '';
+  position: absolute;
+  top: 1.2rem;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: $color-secondary;
+  border: 3px solid $color-contrast-muted;
+  box-sizing: border-box;
+}
+
+.timeline-item.left::after {
+  right: -7px; /* overlaps center line */
+}
+
+.timeline-item.right::after {
+  left: -7px;
+}
+
+.timeline-meta {
+  font-weight: 700;
+  color: $color-contrast;
+}
+
+.timeline-desc {
+  margin-top: 0.25rem;
+  color: $color-contrast-muted;
+}
+
+/* Day header that breaks the center line */
+.timeline-day-header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.65rem 0; /* slightly smaller gap */
+  z-index: 3;
+}
+
+.timeline-day-header::before {
+  /* masks the center line behind the header to create a visible break */
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150px;
+  height: 30px; /* slightly smaller height */
+  background: inherit;
+  border-radius: 6px;
+  z-index: 2;
+}
+
+.timeline-day-text {
+  position: relative;
+  z-index: 4;
+  padding: 0.25rem 0.5rem;
+  font-weight: 700;
+  background: transparent;
+}
+
+@media (max-width: 720px) {
+  /* On mobile: hide the central line and dots, and render items as normal stacked blocks */
+  .timeline::before { display: none; }
+  .timeline-item,
+  .timeline-item.right,
+  .timeline-item.left {
+    width: 100%;
+    left: 0;
+    text-align: left;
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 0.75rem;
+  }
+  .timeline-item::after { display: none; }
+}
+
+/* spacing between groups */
+.timeline-group + .timeline-group { margin-top: 1.5rem; }
+
+/* Two-column group layout */
+/* Removed old group layout styles; timeline has its own responsive rules below */

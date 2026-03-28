@@ -64,3 +64,7 @@ export const STOWE_CONTENT: { header: string; content: string[] }[] = [
     content: FAVORITE_HIKES
   }
 ];
+
+export const IMAGES = [
+  { fileName: 'BEN_JERRYS.jpg', description: '2024 - Ben & Jerry\'s' }
+];

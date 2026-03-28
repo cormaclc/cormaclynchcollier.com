@@ -1,6 +1,7 @@
 import React from 'react';
 import { Typewriter } from '../../Typewriter';
-import { BOLDED_CONTENT, LANDING_PAGE_CONTENT } from '../../../content/wedding/landing';
+import { BOLDED_CONTENT, IMAGES, LANDING_PAGE_CONTENT } from '../../../content/wedding/landing';
+import { Image } from '../image/Image';
 
 // styles
 import '../../../styles/wedding/base.scss';
@@ -11,8 +12,6 @@ const TYPEWRITER_CONTENT = ['married!', 'wedded!', 'hitched!', 'joined in matrim
 export const Landing = () => {
   return <div className='content-wrapper'>
     <h3>We are getting <Typewriter text={TYPEWRITER_CONTENT} /></h3>
-    {/* TODO: INSERT IMAGE */}
-    <p style={{ marginBottom: '10px' }}>TODO: insert image</p>
     {LANDING_PAGE_CONTENT.map((paragraph, index) => (
       <p className='landing-paragraph' key={index}>{paragraph}</p>
     ))}
@@ -20,5 +19,8 @@ export const Landing = () => {
       <p className='landing-paragraph bolded-landing-paragraph' key={index}><strong>{item}</strong></p>
     ))}
     <a className='custom-button rsvp-button' href="/andnatalie/rsvp">Click here to RSVP</a>
+    {IMAGES.map((image, index) => (
+      <Image key={index} fileName={image.fileName} description={image.description} />
+    ))}
   </div>;
 };

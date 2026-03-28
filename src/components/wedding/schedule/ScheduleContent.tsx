@@ -28,7 +28,10 @@ export const ScheduleContent = () => {
                     <div className='timeline-meta'>
                       <span className='timeline-time'>{item.time}</span>
                     </div>
-                    <div className='timeline-desc'>{item.description}</div>
+                    <div className='timeline-desc'>
+                      {item.description}
+                      {item.secondary ? <span style={{ fontStyle: 'italic' }}><br/><br/>{item.secondary}</span> : null}
+                    </div>
                   </div>
                 </div>
               );

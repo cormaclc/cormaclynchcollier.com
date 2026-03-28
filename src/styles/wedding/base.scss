@@ -44,6 +44,20 @@ a:hover {
   color: shared.$color-text
 }
 
+img {
+  border-radius: 10px;
+  border: 10px solid white;
+  align-items: center;
+  width: 400px
+}
+
+@media (max-width: 460px) {
+    img {
+       max-width: 80%;
+    }
+}
+
+
 .content-wrapper {
     margin-top: 8%;
     margin-bottom: 10%;

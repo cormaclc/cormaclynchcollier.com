@@ -9,7 +9,7 @@ const AWOL: AccommodationSpec = {
     'Stowe, VT 05672',
   ],
   additionalDetails: '*Note: when you book both nights, the website will show the discount as half off each night.',
-  imagesPaths: []
+  images: [{ fileName: 'accommodation/AWOL_1.JPG', description: 'AWOL Stowe 1' }, { fileName: 'accommodation/AWOL_2.JPG', description: 'AWOL Stowe 2' }],
 };
 
 const CADY_HILL: AccommodationSpec = {
@@ -20,7 +20,7 @@ const CADY_HILL: AccommodationSpec = {
     '511 Mountain Rd',
     'Stowe, VT 05672',
   ],
-  imagesPaths: []
+  images: [{ fileName: 'accommodation/CADY_HILL_1.JPG', description: 'Cady Hill Lodge 1' }, { fileName: 'accommodation/CADY_HILL_2.JPG', description: 'Cady Hill Lodge 2' }],
 };
 
 export const ACCOMMODATIONS: AccommodationSpec[] = [AWOL, CADY_HILL];

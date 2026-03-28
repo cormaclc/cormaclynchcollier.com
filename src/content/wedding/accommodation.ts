@@ -20,7 +20,7 @@ const CADY_HILL: AccommodationSpec = {
     '511 Mountain Rd',
     'Stowe, VT 05672',
   ],
-  images: [{ fileName: 'accommodation/CADY_HILL_1.JPG', description: 'Cady Hill Lodge 1' }, { fileName: 'accommodation/CADY_HILL_2.JPG', description: 'Cady Hill Lodge 2' }],
+  images: [{ fileName: 'accommodation/CADY_HILL_1.JPG', description: 'Cady Hill Lodge 1' }],
 };
 
 export const ACCOMMODATIONS: AccommodationSpec[] = [AWOL, CADY_HILL];

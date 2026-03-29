@@ -1,11 +1,11 @@
 import React from 'react';
 import { Header } from '../../components/wedding/header/Header';
 import { ACCOMMODATIONS } from '../../content/wedding/accommodation';
+import { Image } from '../../components/wedding/image/Image';
 
 // styles
 import '../../styles/wedding/base.scss';
 import { Divider } from '../../components/wedding/divider/Divider';
-import { Image } from '../../components/wedding/image/Image';
 
 const bottomMargins = { marginBottom: '1rem' };
 
@@ -19,10 +19,14 @@ const Accommodation = () => {
           <div style={bottomMargins}>
             {details.map((detail, detailIndex) => <p key={`accommodation-${index}-detail-${detailIndex}`}>{detail}</p>)}
           </div>
+          {additionalDetails &&
+            <div style={bottomMargins}>
+              {additionalDetails.map((detail, detailIndex) => <p key={`accommodation-${index}-detail-${detailIndex}`}>{detail}</p>)}
+            </div>
+          }
           <div style={bottomMargins}>
             <a className='custom-button'  href={bookingLink} target="_blank" rel="noreferrer">Book here</a>
           </div>
-          {additionalDetails && <p style={bottomMargins}>{additionalDetails}</p>}
           <div style={bottomMargins}>
             {address.map((line, addressIndex) => <p key={`accommodation-${index}-address-${addressIndex}`}>{line}</p>)}
           </div>

@@ -5,6 +5,6 @@ export interface AccommodationSpec {
   details: string[];
   bookingLink: string;
   address: string[];
-  additionalDetails?: string;
+  additionalDetails?: string[];
   images: ImageSpec[];
 }

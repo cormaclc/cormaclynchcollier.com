@@ -2,13 +2,13 @@ import type { AccommodationSpec } from '../../types/wedding/accommodation.types'
 
 const AWOL: AccommodationSpec = {
   name: 'AWOL Stowe',
-  details: ['Stay at the ceremony location with us!',  'Book both Friday and Saturday night and get Friday night on us!*'],
+  details: ['Stay at the ceremony location with us!'],
+  additionalDetails: ['Book both Friday and Saturday night and get half off on us!', 'Note that the price you see on booking page already reflects this lower rate.' ],
   bookingLink: 'https://app.mews.com/distributor/1b454b71-6ea3-43e4-83a4-b27a01047026?mewsAvailabilityBlockId=6ac1ac7d-dcf0-4fc5-bf5b-b3590138feee&mewsStart=2026-08-28&mewsEnd=2026-08-30',
   address: [
     '691 Mountain Rd',
     'Stowe, VT 05672',
   ],
-  additionalDetails: '*Note: when you book both nights, the website will show the discount as half off each night.',
   images: [{ fileName: 'accommodation/AWOL_1.JPG', description: 'AWOL Stowe 1' }, { fileName: 'accommodation/AWOL_2.JPG', description: 'AWOL Stowe 2' }],
 };
 

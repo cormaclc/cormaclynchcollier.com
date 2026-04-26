@@ -1,15 +1,13 @@
-export const DESCRIPTION: { text: string, bold?: boolean }[] = [
-  // { 
-  //   text: 'In anticipation of our wedding, we’ve selected a few traditional items for our home.' 
-  // }, 
-  // { 
-  //   text: 'If you’d prefer to give a gift of another kind, a contribution toward our honeymoon or our future home down payment would mean the world to us.', 
-  //   bold: true 
-  // }, 
-  // { 
-  //   text: 'Thank you for being part of our story!' 
-  // }
+export const DESCRIPTION: { text: string[] }[] = [
   { 
-    text: 'Check back here for our registry information as we get closer to the big day!'
+    text: ['We’re so excited to celebrate with you! Your presence truly means the most to us.']
+  },
+  {
+    text: [
+      'If you’d like to give a gift, we’ve created a registry with a few items we love.', 
+      'We’re also planning our honeymoon and would be incredibly grateful for contributions to help make it unforgettable.'
+    ]
   }
 ];
+
+export const REGISTRY_LINK = 'https://www.crateandbarrel.com/gift-registry/cormac-lynch-collier-and-natalie-toomey/r7515284';

@@ -24,3 +24,20 @@ const CADY_HILL: AccommodationSpec = {
 };
 
 export const ACCOMMODATIONS: AccommodationSpec[] = [AWOL, CADY_HILL];
+
+export const ADDITIONAL_OPTIONS: {
+  name: string,
+  info: string,
+  link: string
+}[] = [
+  {
+    name: 'Field Guide Lodge',
+    info: '5 minute walk from AWOL',
+    link: 'https://www.larkhotels.com/vermont/stowe/field-guide-lodge'
+  },
+  {
+    name: 'Outbound Stowe',
+    info: '6 minute walk from AWOL',
+    link: 'https://outboundhotels.com/stowe/'
+  }
+];

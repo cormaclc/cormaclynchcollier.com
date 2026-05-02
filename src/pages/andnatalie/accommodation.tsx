@@ -1,6 +1,6 @@
 import React from 'react';
 import { Header } from '../../components/wedding/header/Header';
-import { ACCOMMODATIONS } from '../../content/wedding/accommodation';
+import { ACCOMMODATIONS, ADDITIONAL_OPTIONS } from '../../content/wedding/accommodation';
 import { Image } from '../../components/wedding/image/Image';
 
 // styles
@@ -33,9 +33,17 @@ const Accommodation = () => {
           {images.map(({ fileName, description }, imageIndex) => (
             <Image key={`accommodation-${index}-image-${imageIndex}`} fileName={fileName} description={description} hideDescriptionText/>
           ))}
-          {index !== ACCOMMODATIONS.length - 1 && <Divider />}
+          <Divider />
         </div>
       ))}
+      <h3 style={{marginTop: 0}}>Additional options nearby</h3>
+      {
+        ADDITIONAL_OPTIONS.map(({ name, info, link }, index) => (
+          <div key={`additional-option-${index}`} style={{ marginBottom: '1rem' }}>
+            {name} <a href={link} target="_blank" rel="noreferrer">({link})</a> {info}
+          </div>
+        ))
+      }
     </div>
   </div>;
 };
